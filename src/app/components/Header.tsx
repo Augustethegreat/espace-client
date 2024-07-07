@@ -245,7 +245,7 @@ return(
               <Popover.Panel className="absolute bg-white  top-full z-10 mt-3 w-[160px]  overflow-hidden hover:cursor-pointer  shadow-lg text-[#646464] ">
                 <div className=" gap-y-3">
                 
-              <div className="w-full pl-2 py-3 mt-1 hover:bg-[#ececec]" ><Link  href=""></Link>FR</div> 
+              <div className="w-full pl-2 py-3 mt-1 hover:bg-[#ececec]" ><Link  href=""></Link>EN</div> 
                   
                 </div>
 
@@ -364,7 +364,7 @@ return(
       </Popover.Group>
       <Popover.Group className="hidden lg:flex lg:gap-x-12">
       <Popover className="relative">
-        <Popover.Button onClick={change} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
+        <Popover.Button onClick={change} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  hover:text-[#a22a2b] hover:border-b-[#a22a2b]  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
         Nos offres de Prêts
           <ChevronDownIcon
           // style={{display:changeIcon3}}
@@ -411,7 +411,7 @@ return(
  
       <Popover.Group className="hidden lg:flex lg:gap-x-12">
       <Popover className="relative">
-        <Popover.Button onClick={change} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
+        <Popover.Button onClick={change} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  hover:text-[#a22a2b] hover:border-b-[#a22a2b]  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
         Actualités
           <ChevronDownIcon
           // style={{display:changeIcon3}}
@@ -456,7 +456,7 @@ return(
       </Popover.Group>
       <Popover.Group className="hidden lg:flex lg:gap-x-12">
       <Popover className="relative">
-        <Popover.Button onClick={changearrowabout} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
+        <Popover.Button onClick={changearrowabout} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  hover:text-[#a22a2b] hover:border-b-[#a22a2b]  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
         À propos
           <ChevronDownIcon
           // style={{display:changeIcon5}}
@@ -580,26 +580,67 @@ return(
               href="/"
               className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-[#f2f2f2] hover:text-white"
             ><div className="flex gap-x-6 hover:text-white">
-               <WalletIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/>
+               {/* <WalletIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/> */}
                <p className="text-[#272828] font-medium text-[15px]">Accueil</p>
             </div>
            
             </Link>
-            <Link
-              href="#"
-              className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-[#f2f2f2] hover:text-white"
-            >
-              <div className="flex gap-x-6 hover:text-white" onClick={visualroute}>
-               <CreditCardIcon className="h-7 w-7 text-[#616f8d] font-medium text-[15px] mt-0 hover:text-white" aria-hidden="true"/>
-               <p className="text-[#272828] font-medium text-[15px]"> Crédits</p>
-            </div>
-           
-            </Link>
+        
             <Popover.Group className="flex lg:gap-x-12">
       <Popover className="relative">
         <Popover.Button onClick={change} className="flex gap-x-6 hover:text-white">
-        <BanknotesIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/>
-        <p className="text-[#272828] font-medium text-[15px]">Simulateurs</p>
+        {/* <BanknotesIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/> */}
+        <p className="text-[#272828] font-medium text-[15px]">Nos produits Diaspora</p>
+          <ChevronDownIcon
+          // style={{display:changeIcon3}}
+            className='h-7 w-7  flex-none text-[#272828] text-[15px] font-bold'
+            aria-hidden="true"
+          />
+        </Popover.Button>
+
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-700"
+          enterFrom="opacity-0 translate-y-1"
+          enterTo="opacity-100 translate-y-0"
+          leave="transition ease-in duration-150"
+          leaveFrom="opacity-100 translate-y-0"
+          leaveTo="opacity-0 translate-y-1"
+        >
+          <Popover.Panel className="absolute ml-10 bg-white  top-full z-10 mt-3 w-[160px]  overflow-hidden hover:cursor-pointer  shadow-lg text-[#646464] ">
+            <div className=" gap-y-3">
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+              <Link href="/web1/credit" >
+                    Comptes
+                  </Link>
+            </div>
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+              <Link href="/web1/carteBancaire" >
+                    Cartes Bancaires
+                  </Link>
+            </div>
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+              <Link href="/web1/packdiaspora" >
+                    Packs Diaspora
+                  </Link>
+            </div>
+           
+         
+           
+            </div>
+
+          </Popover.Panel>
+        </Transition>
+      </Popover>
+      </Popover.Group>
+
+
+
+      <Popover.Group className="flex lg:gap-x-12">
+      <Popover className="relative">
+        <Popover.Button onClick={change} className="flex gap-x-6 hover:text-white">
+        {/* <BanknotesIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/> */}
+        <p className="text-[#272828] font-medium text-[15px]">Nos offres de Prêts</p>
           <ChevronDownIcon
           // style={{display:changeIcon3}}
             className='h-7 w-7  flex-none text-[#272828] text-[15px] font-bold'
@@ -624,52 +665,38 @@ return(
           <Popover.Panel className="absolute ml-10 bg-white  top-full z-10 mt-3 w-[160px]  overflow-hidden hover:cursor-pointer  shadow-lg text-[#646464] ">
             <div className=" gap-y-3">
             <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
-              <Link href="#crédit" >
-                    Crédits
+              <Link href="/web1/pretImmo"  >
+              Prêt Immo Diaspora
                   </Link>
             </div>
-              {/* <div onClick={depotroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
-              <Link href="#depot" >
-                    DAT
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+            <Link href="/web1/simulateur"  >
+            Simulateur
                   </Link>
-              </div> */}
+            </div>
+          
             </div>
 
           </Popover.Panel>
         </Transition>
       </Popover>
       </Popover.Group>
-            {/* 
-            <Link
-              href="#depot"
-              className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-[#f2f2f2] hover:text-white"
-            ><div className="flex gap-x-6 hover:text-white" onClick={depotroute}>
-               <BanknotesIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/>
-               <p className="text-[#272828] font-medium text-[15px]">Dépôt a termes</p>
-            </div>
-           
-            </Link> */}
-            <Link
-             href="#offres"
-              className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-black hover:bg-[#f2f2f2] hover:text-white"
-            ><div className="flex gap-x-6 hover:text-white"  onClick={packroute}>
-               <RectangleGroupIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/>
-               <p className="text-[#272828] font-medium text-[15px]"> Nos offres</p>
-            </div>
-           
-            </Link>
-            <Popover.Group className="flex lg:gap-x-12">
+
+     
+
+      <Popover.Group className="flex lg:gap-x-12">
       <Popover className="relative">
         <Popover.Button onClick={change} className="flex gap-x-6 hover:text-white">
-        <MdInfoOutline className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/>
-        <p className="text-[#272828] font-medium text-[15px]">À propos</p>
+        {/* <BanknotesIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/> */}
+        <p className="text-[#272828] font-medium text-[15px]">
+        Actualités</p>
           <ChevronDownIcon
-          // style={{display:changeIcon5}}
+          // style={{display:changeIcon3}}
             className='h-7 w-7  flex-none text-[#272828] text-[15px] font-bold'
             aria-hidden="true"
           />
           {/* <ChevronUpIcon
-          style={{display:changeIcon4}}
+          style={{display:changeIcon2}}
             className="h-7 w-7 font-bold flex-none  text-[#272828]"
             aria-hidden="true"
           /> */}
@@ -686,24 +713,71 @@ return(
         >
           <Popover.Panel className="absolute ml-10 bg-white  top-full z-10 mt-3 w-[160px]  overflow-hidden hover:cursor-pointer  shadow-lg text-[#646464] ">
             <div className=" gap-y-3">
-            <div onClick={aboutroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
-              <Link href="#crédit" >
-              La Diaspora Banking
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+              <Link href="#"  >
+              Nouveautés
                   </Link>
             </div>
-            <div onClick={aboutroute2} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
-              <Link href="#crédit" >
-              Notre Portail Client
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+            <Link href="#" >
+              
+            Communiqués de presse
                   </Link>
             </div>
-         
             </div>
 
           </Popover.Panel>
         </Transition>
       </Popover>
       </Popover.Group>
-           
+      <Popover.Group className="flex lg:gap-x-12">
+      <Popover className="relative">
+        <Popover.Button onClick={change} className="flex gap-x-6 hover:text-white">
+        {/* <BanknotesIcon className="h-7 w-7 text-[#616f8d] mt-0 hover:text-white" aria-hidden="true"/> */}
+        <p className="text-[#272828] font-medium text-[15px]">À propos</p>
+          <ChevronDownIcon
+          // style={{display:changeIcon3}}
+            className='h-7 w-7  flex-none text-[#272828] text-[15px] font-bold'
+            aria-hidden="true"
+          />
+          {/* <ChevronUpIcon
+          style={{display:changeIcon2}}
+            className="h-7 w-7 font-bold flex-none  text-[#272828]"
+            aria-hidden="true"
+          /> */}
+        </Popover.Button>
+
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-700"
+          enterFrom="opacity-0 translate-y-1"
+          enterTo="opacity-100 translate-y-0"
+          leave="transition ease-in duration-150"
+          leaveFrom="opacity-100 translate-y-0"
+          leaveTo="opacity-0 translate-y-1"
+        >
+          <Popover.Panel className="absolute ml-10 bg-white  top-full z-10 mt-3 w-[160px]  overflow-hidden hover:cursor-pointer  shadow-lg text-[#646464] ">
+            <div className=" gap-y-3">
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+              <Link href="/web1/diasporabanking"  >
+              Le service Diaspora Banking
+                  </Link>
+            </div>
+            <div onClick={creditroute} className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
+            <Link href="/web1/portailclient" >
+              
+              Le portail Client
+                  </Link>
+            </div>
+            </div>
+
+          </Popover.Panel>
+        </Transition>
+      </Popover>
+      </Popover.Group>
+      
+          
+          
   
           </div>
 

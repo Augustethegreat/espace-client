@@ -309,7 +309,7 @@ return(
       </Link>          
       <Popover.Group className="hidden lg:flex lg:gap-x-12">
       <Popover className="relative">
-        <Popover.Button onClick={changearrowabout} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
+        <Popover.Button onClick={changearrowabout} className={`font-medium text-[15px] flex outline-none leading-6 text-black border-b-[2px] border-b-white hover:text-[#a22a2b] hover:border-b-[#a22a2b]  ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>
         Nos produits Diaspora 
           <ChevronDownIcon
           // style={{display:changeIcon5}}

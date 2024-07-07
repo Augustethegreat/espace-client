@@ -341,7 +341,7 @@ return(
                     Comptes</p> 
                  
                   </div> </Link>
-                  <Link href="/web1/cartebancaire">
+                  <Link href="/web1/carteBancaire">
                   <div  className="w-full pl-2 py-3 mt-1 text-black hover:text-white hover:bg-[#a22a2b] bg-white">
 
                   <p className={`font-medium text-[15px] leading-6   hover:text-[#ffffff] hover:border-b-[#a22a2b] ${loginOpen ? ' border-b-[#eaeaea] ' : ''}`}>

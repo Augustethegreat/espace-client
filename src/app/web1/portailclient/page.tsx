@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {motion} from "framer-motion"
 import Link from 'next/link'
 import About from '@/app/components/About'
-export default function portailclient() {
+export default function Portailclient() {
   return (
     <div  className='text-center items-center justify-center flex mx-auto pb-[50px] text-black overflow-x-hidden'>
     <div  className='text-center items-center justify-center mx-auto'>

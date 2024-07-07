@@ -1,7 +1,7 @@
 "use client"
 import React,{useState} from 'react'
 
-export default function packdiaspora() {
+export default function Packdiaspora() {
 const [show1, setShow1] = useState('none');
 const [show2, setShow2] = useState('none');
 const [show3, setShow3] = useState('none');

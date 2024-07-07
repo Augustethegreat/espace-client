@@ -2,7 +2,7 @@ import React from 'react'
 import pic from "../img/diaspora.png"
 import Image from 'next/image'
 import {motion} from "framer-motion"
-function diasporabanking() {
+function Diasporabanking() {
   return (
     <div  className='text-center items-center justify-center flex mx-auto text-black'>
          <div  className='text-center items-center justify-center mx-auto'>
@@ -37,4 +37,4 @@ function diasporabanking() {
   )
 }
 
-export default diasporabanking
+export default Diasporabanking

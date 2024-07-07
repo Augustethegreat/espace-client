@@ -6,7 +6,7 @@ import cap3 from "../img/cap3.png"
 import img1 from "../img/acc3.jpg"
 
 // import Visuals from './visuals'
-function simulateur() {
+function Simulateur() {
     const [openSimul, setOpensimul] = useState('none');
     const [creditCal, setCreditCal] = useState('')
     const [montsol, setMontsol] = useState(0);
@@ -217,4 +217,4 @@ function simulateur() {
   )
 }
 
-export default simulateur
+export default Simulateur

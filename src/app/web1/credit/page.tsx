@@ -10,7 +10,7 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { XMarkIcon } from '@heroicons/react/20/solid'
 
 
-function credit() {
+function Credit() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
   const [loginOpen1, setLoginOpen1] = useState(false);
@@ -325,4 +325,4 @@ function credit() {
   )
 }
 
-export default credit
+export default Credit

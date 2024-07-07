@@ -17,7 +17,7 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 import Questions from '@/app/components/Questions'
 
 
-function aide() {
+function Aide() {
  
   return (
     <div  className='scroll-smooth pb-[20px] '>
@@ -171,4 +171,4 @@ function aide() {
   )
 }
 
-export default aide
+export default Aide

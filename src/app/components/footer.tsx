@@ -1,3 +1,4 @@
+"use client"
 import React,{useState} from 'react'
 import { SocialIcon } from 'react-social-icons'
 import {ChatBubbleLeftIcon,ChevronDownIcon,ChevronUpIcon ,HomeIcon,PaperAirplaneIcon,PhoneIcon,PlayCircleIcon} from "@heroicons/react/20/solid";
@@ -49,10 +50,10 @@ function Footers() {
                     <div className='flex gap-x-9 lg:gap-x-0 md:block lg:flex lg:pb-10'>
                     <div className='px-0 md:px-6 gap-y-5 h-[200px] w-[180px] md:w-auto'>
                         <p className='mt-2 lg:pb-3 text-[12px] lg:text-[15px] '>CONTACT</p>
-                        <p className='text-[12px] lg:text-[15px]'>Téléphones : +243 81 830 27 00 / </p>
-                        <p className='mt-2 text-[12px] lg:text-[15px]'>+243 99 601 80 00</p>
+
                         <p className='mt-2 text-[12px] lg:text-[15px]'>Email: mail@equitybcdc.cd</p>
                         <p className='mt-2 text-[12px] lg:text-[15px]'>Service d’Assistance Clientèle en ligne</p>
+                        <p className='mt-2 text-[12px] lg:text-[15px]'>55 Bd du 30 Juin, Kinshasa, Gombe</p>
                     </div >
                     <div className="px-0 md:px-6 gap-y-5 h-[200px] md:mt-5 lg:mt-0 w-[180px] md:w-auto">
                         <p className='mt-2  lg:pb-3 text-[12px] lg:text-[15px] '>SERVICES</p>
@@ -81,9 +82,9 @@ function Footers() {
                     <div id='footerss' className='flex gap-x-9 lg:gap-x-0 md:block lg:flex lg:pb-10'>
                     <div className="px-0 md:px-6 gap-y-5 h-[200px] w-[180px] md:w-auto">
                         <p className='mt-2  lg:pb-3 text-[12px] lg:text-[15px] '>HORAIRE DES AGENCES</p>
-                        <p className='text-[12px] lg:text-[15px]'>Du lundi au vendredi: 8h30-16h00</p>
-                        <p className='mt-2 text-[12px] lg:text-[15px]'>Samedi: 8h00-12h00</p>
-                        <p className='mt-2 text-[12px] lg:text-[15px]'>Dimanche/jours fériés: fermé</p>
+                        <p className='text-[12px] lg:text-[15px]'>Du lundi au vendredi : 8h30 à 16h00</p>
+                        <p className='text-[12px] lg:text-[15px]'>Mercredi : retrait commande carte sur rendez-vous</p>
+                        <p className='mt-2 text-[12px] lg:text-[15px]'>Samedi : sur rendez-vous uniquement</p>
                     </div>
                     <div className="px-0 md:px-6 gap-y-5 h-[200px] md:mt-5 lg:mt-0 w-[180px] md:w-auto">
                     <div className="flex py lg:pb-3 -1 gap-x-0">

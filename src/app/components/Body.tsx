@@ -43,7 +43,7 @@ function TheBody() {
       <div className=''>
       <p className='text-[#a22a2b] px-4 md:px-10 lg:px-0 lg:max-w-screen-lg  font-medium text-[15px] md:text-[22px] leading-tight md:text-lg lg:text-[28px] mt-4'>Bonjour,</p> 
      <p className='text-[#272828]  mt-2 px-4 md:px-10 lg:px-0  font-medium text-[15px] md:text-[22px] leading-tight lg:text-[28px] '>
-Découvrez le compte Diaspora, votre compte bancaire maintenu à l'étranger en toute sécurité …</p>
+        Découvrez le compte Diaspora, votre compte bancaire maintenu à l'étranger en toute sécurité …</p>
 
       </div>
      

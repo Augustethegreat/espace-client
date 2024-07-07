@@ -1,4 +1,7 @@
 
+import Footers from "./components/footer"
+import Header from "./components/Header"
+
 
 export const metadata = {
   title: 'Equity BCDC | Diaspora',
@@ -12,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>{children}</body>
+      <body>
+       <Header/>
+        {children}
+        <Footers/>
+        </body>
+      
     </html>
   )
 }

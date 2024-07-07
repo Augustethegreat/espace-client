@@ -1,22 +1,16 @@
 import React from 'react'
-import pic from "../component/img/diaspora.png"
+import pic from "../img/diaspora.png"
 import Image from 'next/image'
 import {motion} from "framer-motion"
-function About() {
+function diasporabanking() {
   return (
     <div  className='text-center items-center justify-center flex mx-auto text-black'>
          <div  className='text-center items-center justify-center mx-auto'>
            <div className='block lg:flex gap-x-[80px] mt-[50px] w-full px-5'>
-            <motion.div initial={{x: -200, opacity:0}}
-                              whileInView={{x:0, opacity:1}}
-                        transition={{duration:1.2}}
-                        viewport={{once:true}} className='md:px-[100px] px-0 lg:px-0 items-center justify-center flex mx-auto'>
+            <div className='md:px-[100px] px-0 lg:px-0 items-center justify-center flex mx-auto'>
             <Image src={pic} className='text-white w-full h-auto   lg:h-[600px] shadow-xl rounded-[15px] lg:w-auto' alt=''/>
-            </motion.div>
-            <motion.div initial={{x: 200, opacity:0}}
-                              whileInView={{x:0, opacity:1}}
-                        transition={{duration:1.2}}
-                        viewport={{once:true}} className='md:h-[600px] h-auto items-center justify-center mx-auto mt-10 md:px-[100px] px-0 lg:px-0'>
+            </div>
+            <div  className='md:h-[600px] h-auto items-center justify-center mx-auto mt-10 md:px-[100px] px-0 lg:px-0'>
               <div className=''>
                 <p className='md:text-[35px] text-[25px] font-medium text-center text-[#a22a2b]'>A PROPOS DE LA DIASPORA BANKING</p>
                 <div className='text-[18px]  text-start w-full lg:w-[650px] mt-5 space-y-7'>
@@ -35,7 +29,7 @@ function About() {
             
               </div>
              
-            </motion.div>
+            </div>
             
           </div>
     </div>
@@ -43,4 +37,4 @@ function About() {
   )
 }
 
-export default About
+export default diasporabanking

@@ -182,63 +182,10 @@ export default function Page() {
             {/* <div className=" fixed w-[100%] h-[100%] overflow-hidden opacity-10 "></div> */}
 
 
-  <div  className=" h-15 border-b-2     ">
-        <nav className="mx-auto hidden md:hidden lg:flex w-full text-[#f5f4f4] items-center justify-start p-1 lg:px-8 border-b-[1px] border-b-[#a22a2b]"
-        aria-label="Global" >
-            <div className="flex  gap-x-2  float-right ml-[50%] text-sm">
-             <div className="py-2 px-2 hover:bg-[#f3f3f3]">
-             <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Popover className="relative">
-            <Popover.Button  className="flex outline-none items-center gap-x-4 text-[15px] font-bold   text-[#a22a2b] border-none hover:border-none"> {/* onClick={changes} */}
-              {lang} 
-              <ChevronDownIcon
-              style={{display:changeIcon1}}
-                className='h-7 w-7  flex-none text-[#a22a2b] text-[15px] font-bold'
-                aria-hidden="true"
-              />
-              <ChevronUpIcon
-              style={{display:changeIcon}}
-                className="h-7 w-7 font-bold flex-none text-[#a22a2b]"
-                aria-hidden="true"
-              />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-700"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute bg-white  top-full z-10 mt-3 w-[160px]  overflow-hidden hover:cursor-pointer  shadow-lg text-[#646464] ">
-                <div className=" gap-y-3">
-                
-              <div className="w-full pl-2 py-3 mt-1 hover:bg-[#ececec]" onClick={langchange}><a  href="">{lang1}</a></div> 
-                  
-                </div>
-
-              </Popover.Panel>
-            </Transition>
-          </Popover>
-          </Popover.Group>
-             </div>
-
-             <div className="flex py-1">
-             <SocialIcon url="https://www.facebook.com/EquityBCDC/" fgColor='#a22a2b' bgColor='transparent' style={{ height: 34, width: 34 }} />
-             <SocialIcon url="https://twitter.com/EquityBCDC" fgColor='#a22a2b' bgColor='transparent' style={{ height: 34, width: 34 }}  />
-             <SocialIcon url="https://www.linkedin.com/company/equitybcdc/" fgColor='#a22a2b' bgColor='transparent' style={{ height: 34, width: 34 }} />
-             <SocialIcon url="https://www.instagram.com/equitybankcongo/" fgColor='#a22a2b' bgColor='transparent' style={{ height: 34, width: 34 }} />
-             </div>
-             <p className="text-black px-2 py-2 font-medium text-[15px]">Appel</p>
-             <p className="py-2 font-medium text-[15px] text-[#a22a2b]">+243-996-018-000</p>
-            </div>
-        </nav></div>
 
 
 
-
+        {/* <Header/> */}
 
       <div style={{display:showfr}}>
         <Page1 />
@@ -247,6 +194,7 @@ export default function Page() {
     <div style={{display:showEN}}>
       <Page2/>
     </div>
+  
     </main>
   );
 }

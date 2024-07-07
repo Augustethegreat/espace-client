@@ -1,21 +1,23 @@
+"use client"
 import React, {useState } from 'react'
-import themobile1 from "./img/thishead.png"
-import themobile from "./img/themobile.jpg"
-import themobile2 from "./img/head3.jpg"
-import smallhead from "./img/smallhead.png"
-import cap1 from "./img/cap1.png"
-import cap2 from "./img/cap2.png"
-import cap3 from "./img/cap3.png"
-import cap4 from "./img/cap4.png"
-import cap5 from "./img/cap5.png"
-import cap6 from "./img/cap6.png"
-import appsell from "./img/aide.jpg"
+import themobile1 from "../img/thishead.png"
+import themobile from "../img/themobile.jpg"
+import themobile2 from "../img/head3.jpg"
+import smallhead from "../img/smallhead.png"
+import cap1 from "../img/cap1.png"
+import cap2 from "../img/cap2.png"
+import cap3 from "../img/cap3.png"
+import cap4 from "../img/cap4.png"
+import cap5 from "../img/cap5.png"
+import cap6 from "../img/cap6.png"
+import appsell from "../img/aide.jpg"
 import { Bars3Icon, XMarkIcon, EnvelopeIcon, QuestionMarkCircleIcon, UserCircleIcon, CreditCardIcon, BanknotesIcon, WalletIcon, RectangleGroupIcon } from "@heroicons/react/24/outline";
 import {ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
 import { CheckIcon } from '@heroicons/react/20/solid'
-import Questions from './Questions'
+import Questions from '@/app/components/Questions'
 
-function Aide() {
+
+function aide() {
  
   return (
     <div  className='scroll-smooth pb-[20px] '>
@@ -169,4 +171,4 @@ function Aide() {
   )
 }
 
-export default Aide
+export default aide
